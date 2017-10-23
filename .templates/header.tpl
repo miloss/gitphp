@@ -66,11 +66,9 @@
     {/if}
     {/foreach}
     {/if}
-    {if $extrajs_files}
-    {foreach from=$extrajs_files item=js_file}
-    <script type="text/javascript" src="/{$js_file}?v={$jsversion}"></script>
-    {/foreach}
-    {/if}
+
+    <script type="text/javascript" src="/js/syntaxhighlighter.js"></script>
+
     {$smarty.capture.header}
     <link rel="stylesheet" href="/css/review.css?v={$cssversion}" type="text/css" />
     {if $fixlineheight}
