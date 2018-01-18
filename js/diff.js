@@ -54,6 +54,11 @@ $(function(){
         location.reload();
     });
 
+    $('#diff-select-theme').change(function(){
+        $.cookie('theme', $(this).val(), {expires: 365});
+        location.reload();
+    });
+
     $('.file_filter .extension').click(function(event) {
         SmartFilter.onFilterClick(event, $(this), 'filetype', 'extension', 'ext');
     });

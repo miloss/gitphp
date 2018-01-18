@@ -126,6 +126,13 @@
                             <div class="search-panel">Ignore format <input id="diff-ignore-format" class="checkbox-input" type="checkbox" {if $ignoreformat}checked="checked"{/if}/></div>
                             <div class="search-panel">Ignore whitespace <input id="diff-ignore-whitespace" class="checkbox-input" type="checkbox" {if $ignorewhitespace}checked="checked"{/if}/></div>
                             <div class="search-panel">Context <input class="text-input" type="text" size="2" id="diff-context" {if $diffcontext}value="{$diffcontext}"{/if} /></div>
+                            <div class="search-panel">Theme
+                              <select id="diff-select-theme" class="select-input" style="float: right;">
+                                {foreach from=$themes item=theme}
+                                  <option {if $selected_theme == $theme}selected="selected"{/if} value="{$theme}">{$theme}</option>
+                                {/foreach}
+                              </select>
+                            </div>
                         {/if}
                     </div>
                 </div>

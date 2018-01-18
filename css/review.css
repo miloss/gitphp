@@ -75,16 +75,16 @@ span.btn_small {
     line-height: 36px;
 }
 .syntaxhighlighter div.commented.line {
-    background: #fffdea !important;
+    background: rgba(255, 231, 0, 0.09) !important;
 }
 .syntaxhighlighter div.commented.line:hover {
-    background: #fffdea !important;
+    background: rgba(255, 231, 0, 0.09) !important;
 }
 .syntaxhighlighter div.commented.line.deleted-row-container {
-    background: #fff8ea !important;
+    background: rgba(255, 170, 0, 0.09) !important;
 }
 .syntaxhighlighter div.commented.line.added-row-container {
-    background: #faffea !important;
+    background: rgba(194, 255, 0, 0.09) !important;
 }
 
 .comment-container {

@@ -1,0 +1,19 @@
+.syntaxhighlighter code.added {
+  background-color: #a6f3a6 !important;
+}
+
+.syntaxhighlighter code.removed {
+  background-color: #f8cbcb !important;
+}
+
+.syntaxhighlighter .deleted-row-container {
+  background-color: rgba(255, 0, 0, 0.09) !important;
+}
+
+.syntaxhighlighter .added-row-container {
+  background-color: rgba(0, 255, 0 , 0.09) !important;
+}
+
+.syntaxhighlighter .selected-multi {
+  background-color: rgba(255, 231, 0, 0.09) !important;
+}

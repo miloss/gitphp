@@ -17,10 +17,7 @@
 .syntaxhighlighter {
   background-color: white !important;
 }
-.syntaxhighlighter .line.alt1 {
-  background-color: white !important;
-}
-.syntaxhighlighter .line.alt2 {
+.syntaxhighlighter .container {
   background-color: white !important;
 }
 .syntaxhighlighter .line.highlighted.alt1, .syntaxhighlighter .line.highlighted.alt2 {

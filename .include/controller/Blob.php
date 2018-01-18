@@ -243,6 +243,8 @@ class Blob extends Base
                 $this->tpl->assign('extrajs_files', $SH->getJsList());
                 $this->tpl->assign('highlighter_brushes', $SH->getBrushesList());
                 $this->tpl->assign('highlighter_brush_name', $SH->getBrushName());
+                $this->tpl->assign('themes', $SH->getThemesList());
+                $this->tpl->assign('selected_theme', $SH->getSelectedTheme());
                 $this->tpl->assign('blobstr', $blob->getData(false));
                 return;
 

@@ -132,10 +132,34 @@ class SyntaxHighlighter
     public function getCssList()
     {
         $path = self::BASE_PATH . 'styles/';
-        return array(
+        $list = array(
             $path . 'shCore.css',
             $path . 'shThemeDefault.css',
         );
+        $theme = self::getSelectedTheme();
+        if ($theme != 'Default' && in_array($theme, self::getThemesList())) {
+            $list[] = $path . 'shTheme' . $theme . '.css';
+        }
+        $list[] = $path . 'shCustom.css';
+        return $list;
+    }
+
+    public function getThemesList()
+    {
+        return array(
+            'Default',
+            'Django',
+            'Eclipse',
+            'Emacs',
+            'FadeToGrey',
+            'Midnight',
+            'RDark',
+        );
+    }
+
+    public function getSelectedTheme()
+    {
+        return isset($_COOKIE['theme']) ? $_COOKIE['theme'] : 'Default';
     }
 
     public function getJsList()

@@ -172,6 +172,8 @@ class Commitdiff extends DiffBase
                 );
                 $this->tpl->assign('extracss_files', $SH->getCssList());
                 $this->tpl->assign('extrajs_files', $SH->getJsList());
+                $this->tpl->assign('themes', $SH->getThemesList());
+                $this->tpl->assign('selected_theme', $SH->getSelectedTheme());
             }
             $this->tpl->assign('highlighter_brushes', $brashes);
             $this->tpl->assign('extensions', $extensions);
